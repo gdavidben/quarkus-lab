@@ -10,9 +10,16 @@
     <version>1.0.0-SNAPSHOT</version>
   </parent>
 
-  <groupId>com.gdavidben.quarkuslab.cache</groupId>
-  <artifactId>quarkus-cache</artifactId>
+  <groupId>com.quarkuslab.lambda</groupId>
+  <artifactId>quarkus-lambda</artifactId>
   <version>1.0.0-SNAPSHOT</version>
+
+  <properties>
+    <maven.compiler.release>11</maven.compiler.release>
+    <skipPmd>true</skipPmd>
+    <skipSpotBugs>true</skipSpotBugs>
+    <skipCheckStyle>true</skipCheckStyle>
+  </properties>
 
   <dependencyManagement>
     <dependencies>
@@ -29,26 +36,19 @@
   <dependencies>
     <dependency>
       <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-resteasy</artifactId>
+      <artifactId>quarkus-hibernate-validator</artifactId>
     </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-rest-client-jackson</artifactId>
+      <artifactId>quarkus-amazon-lambda</artifactId>
     </dependency>
     <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-rest-client</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-cache</artifactId>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.24</version>
+      <scope>provided</scope>
     </dependency>
 
-    <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-junit5-mockito</artifactId>
-      <scope>test</scope>
-    </dependency>
   </dependencies>
 
 </project>
