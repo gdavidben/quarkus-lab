@@ -1,6 +1,6 @@
 package com.quarkuslab.lambda.crypto;
 
-import javax.enterprise.context.ApplicationScoped;
+import jakarta.enterprise.context.ApplicationScoped;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -12,7 +12,7 @@ import static java.util.stream.Collectors.toList;
 @ApplicationScoped
 public class CryptoCurrencyRepository {
 
-  private static List<CryptoCurrency> cryptoCurrencyList = Collections.synchronizedList(new ArrayList<>());
+  private static final List<CryptoCurrency> cryptoCurrencyList = Collections.synchronizedList(new ArrayList<>());
 
   public List<CryptoCurrency> findAll() {
     return cryptoCurrencyList.stream().collect(toList());
