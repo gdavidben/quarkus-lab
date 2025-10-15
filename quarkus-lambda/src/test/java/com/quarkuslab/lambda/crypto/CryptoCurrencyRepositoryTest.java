@@ -3,7 +3,7 @@ package com.quarkuslab.lambda.crypto;
 import io.quarkus.test.junit.QuarkusTest;
 import org.junit.jupiter.api.Test;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
