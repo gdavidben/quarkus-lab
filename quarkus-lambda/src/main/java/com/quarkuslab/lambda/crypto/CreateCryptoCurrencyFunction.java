@@ -3,8 +3,8 @@ package com.quarkuslab.lambda.crypto;
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;
 
-import javax.inject.Inject;
-import javax.inject.Named;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 
 @Named("create")
 public class CreateCryptoCurrencyFunction implements RequestHandler<CryptoCurrency, CryptoCurrency> {
