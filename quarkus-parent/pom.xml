@@ -18,10 +18,10 @@
     <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
     <quarkus.platform.group-id>io.quarkus.platform</quarkus.platform.group-id>
 
-    <plugin.compiler.version>3.14.0</plugin.compiler.version>
+    <plugin.compiler.version>3.14.1</plugin.compiler.version>
     <plugin.surefire.version>3.5.4</plugin.surefire.version>
     <plugin.failsafe.version>3.5.4</plugin.failsafe.version>
-    <plugin.spotbugs.version>4.8.5.0</plugin.spotbugs.version>
+    <plugin.spotbugs.version>4.9.7.0</plugin.spotbugs.version>
     <plugin.checkstyle.version>3.6.0</plugin.checkstyle.version>
     <plugin.pmd.version>3.28.0</plugin.pmd.version>
     <plugin.git-commit-id-maven-plugin.version>8.0.2</plugin.git-commit-id-maven-plugin.version>
